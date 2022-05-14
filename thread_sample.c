@@ -44,7 +44,7 @@ static void thread2_entry(void *param)
     rt_uint32_t count = 0;
 
     /* 线程2拥有较高的优先级，以抢占线程1而获得执行 */
-    for (count = 0; count < 10 ; count++)
+    for (count = 0; count < 9 ; count++)
     {
         /* 线程2打印计数值 */
         rt_kprintf("thread2 count: %d\n", count);
